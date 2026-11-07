@@ -1,0 +1,8 @@
+quarkus:
+  http:
+    port: 8080
+  datasource:
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/mydb
+    username: myuser
+    password: mypassword
