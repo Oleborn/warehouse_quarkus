@@ -1,8 +1,25 @@
 quarkus:
   http:
     port: 8080
+
   datasource:
-    jdbc:
-      url: jdbc:postgresql://localhost:5432/mydb
-    username: myuser
-    password: mypassword
+    db-kind: postgresql
+
+  liquibase:
+    change-log: db/changelog.yaml
+    migrate-at-start: true
+
+  hibernate-orm:
+    schema-management:
+      strategy: none
+    log:
+      sql: true
+      format-sql: true
+
+"%dev":
+  quarkus:
+    datasource:
+      jdbc:
+        url: jdbc:postgresql://localhost:5432/mydb
+      username: myuser
+      password: mypassword

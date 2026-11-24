@@ -1,4 +1,4 @@
-package devforge;
+package devforge.service;
 
 import jakarta.enterprise.context.ApplicationScoped;
 

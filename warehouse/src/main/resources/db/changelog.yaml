@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/001-create-expected-delivery.sql
+
+  - include:
+      file: db/changelog/002-create-expected-item.sql
+
+  - include:
+      file: db/changelog/003-create-receipt.sql
+
+  - include:
+      file: db/changelog/004-create-received-item.sql
